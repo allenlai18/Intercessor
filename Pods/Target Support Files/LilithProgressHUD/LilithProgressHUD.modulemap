@@ -1,0 +1,6 @@
+framework module LilithProgressHUD {
+  umbrella header "LilithProgressHUD-umbrella.h"
+
+  export *
+  module * { export * }
+}

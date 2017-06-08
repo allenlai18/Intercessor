@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Group ChatVC-->
+        <scene sceneID="5sU-tl-boV">
+            <objects>
+                <viewController storyboardIdentifier="GroupChatVC" id="dUO-va-rGz" customClass="GroupChatVC" customModule="Intercessor" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LJ5-ii-FVN"/>
+                        <viewControllerLayoutGuide type="bottom" id="eKp-JE-tBl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="syL-vt-pSb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="hkx-p6-L7W"/>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hkx-p6-L7W" firstAttribute="leading" secondItem="syL-vt-pSb" secondAttribute="leading" id="6d1-Uq-uxW"/>
+                            <constraint firstAttribute="trailing" secondItem="hkx-p6-L7W" secondAttribute="trailing" id="Wzl-2P-WTM"/>
+                            <constraint firstItem="hkx-p6-L7W" firstAttribute="top" secondItem="syL-vt-pSb" secondAttribute="top" id="byz-zy-O6b"/>
+                            <constraint firstAttribute="bottom" secondItem="hkx-p6-L7W" secondAttribute="bottom" id="wYK-4R-ogw"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="8qj-fc-iYK">
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" image="BackButton" id="txq-YW-wba">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="backButtonTapped:" destination="dUO-va-rGz" id="1mw-Df-fii"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4_7.fullscreen"/>
+                    <connections>
+                        <outlet property="bgImage" destination="hkx-p6-L7W" id="Vjd-zt-pkI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XWP-bq-6Dt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1953" y="456"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BackButton" width="21" height="21"/>
+        <image name="bg" width="750" height="1334"/>
+    </resources>
+</document>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Direct ChatVC-->
+        <scene sceneID="Qnk-iF-AmO">
+            <objects>
+                <viewController storyboardIdentifier="DirectChatVC" id="hSt-4e-COP" customClass="DirectChatVC" customModule="Intercessor" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DQX-p3-p0I"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bwf-aL-poA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7rg-U3-b1A">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="QMT-4E-KIh"/>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QMT-4E-KIh" firstAttribute="leading" secondItem="7rg-U3-b1A" secondAttribute="leading" id="R4z-7S-Bw0"/>
+                            <constraint firstAttribute="bottom" secondItem="QMT-4E-KIh" secondAttribute="bottom" id="Zrh-2R-cWF"/>
+                            <constraint firstItem="QMT-4E-KIh" firstAttribute="top" secondItem="7rg-U3-b1A" secondAttribute="top" id="hkL-7o-TA2"/>
+                            <constraint firstAttribute="trailing" secondItem="QMT-4E-KIh" secondAttribute="trailing" id="uC7-I5-xEE"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="zBo-nE-Uxz">
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" image="BackButton" id="iSH-D2-Irq">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="backButtonTapped:" destination="hSt-4e-COP" id="J2V-oT-jX3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO">
+                        <color key="barTintColor" red="0.21176470589999999" green="0.21176470589999999" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </simulatedNavigationBarMetrics>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4_7.fullscreen"/>
+                    <connections>
+                        <outlet property="bgImage" destination="QMT-4E-KIh" id="9Cr-5Z-Zwo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ex5-32-SFz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1953" y="-207"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BackButton" width="21" height="21"/>
+        <image name="bg" width="750" height="1334"/>
+    </resources>
+</document>

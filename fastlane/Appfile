@@ -1,0 +1,7 @@
+app_identifier "com.alai.IntercessorApp" # The bundle identifier of your app
+apple_id "allenplai@gmail.com" # Your Apple email address
+
+team_id "STF78Q467Z" # Developer Portal Team ID
+
+# you can even provide different app identifiers, Apple IDs and team names per lane:
+# More information: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Appfile.md

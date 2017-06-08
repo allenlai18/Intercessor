@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="nXJ-dp-M7G">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="9XX-cP-Bcf">
+            <objects>
+                <tabBarController storyboardIdentifier="Tab Bar Controller" id="nXJ-dp-M7G" customClass="TabBarController" customModule="Intercessor" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" itemPositioning="centered" id="C1w-Qc-8Ub">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.43529411764705883" green="0.43529411764705883" blue="0.43529411764705883" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="EkG-IB-ZKY" kind="relationship" relationship="viewControllers" id="zHM-Cm-B9L"/>
+                        <segue destination="QU3-6K-eio" kind="relationship" relationship="viewControllers" id="gNA-k6-Hnx"/>
+                        <segue destination="cnZ-rj-rWY" kind="relationship" relationship="viewControllers" id="HLw-YQ-adt"/>
+                        <segue destination="SgF-qc-Eb0" kind="presentation" identifier="Add Post" id="UMV-lR-J23"/>
+                        <segue destination="Tpl-2O-GqV" kind="relationship" relationship="viewControllers" id="Cg1-wU-bQ4"/>
+                        <segue destination="2Th-Nv-ZhE" kind="relationship" relationship="viewControllers" id="H9o-uz-fo6"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CSZ-PA-awh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1038" y="1024"/>
+        </scene>
+        <!--HomeTab-->
+        <scene sceneID="c33-2r-cJ5">
+            <objects>
+                <viewControllerPlaceholder storyboardName="HomeTab" id="EkG-IB-ZKY" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="5cU-Nd-ua5"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MXx-Tv-Wxm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1780" y="484.85757121439286"/>
+        </scene>
+        <!--MessagesTab-->
+        <scene sceneID="Ev9-zo-YeO">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MessagesTab" id="QU3-6K-eio" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="7aL-Kn-gDW"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9cz-ze-kpn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2731" y="664"/>
+        </scene>
+        <!--Add Post-->
+        <scene sceneID="JMS-M0-vs0">
+            <objects>
+                <viewController title="Add Post" id="cnZ-rj-rWY" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CZQ-cs-rlH"/>
+                        <viewControllerLayoutGuide type="bottom" id="vjj-mp-ww2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Rk2-zo-4SA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="AddPostTab" selectedImage="AddPostTab" id="YjU-Ws-qVP">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nDc-Zu-Jdz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3208.8000000000002" y="854.1229385307347"/>
+        </scene>
+        <!--NotificationsTab-->
+        <scene sceneID="S32-et-eiU">
+            <objects>
+                <viewControllerPlaceholder storyboardName="NotificationsTab" id="Tpl-2O-GqV" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="zbe-Ry-wMu"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Wg-2F-Mp8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2418" y="1181"/>
+        </scene>
+        <!--ProfileTab-->
+        <scene sceneID="bJB-U3-yhv">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ProfileTab" id="2Th-Nv-ZhE" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="MeI-Hr-Kqi"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ccs-Ph-dce" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2418" y="1246"/>
+        </scene>
+        <!--ComposePost-->
+        <scene sceneID="0Nb-L3-2U6">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ComposePost" id="SgF-qc-Eb0" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cuL-Tp-1ZR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3786" y="763"/>
+        </scene>
+        <!--AuthNavigationController-->
+        <scene sceneID="Zun-Cr-D9F">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="AuthNavigationController" storyboardName="Auth" referencedIdentifier="AuthNavigationController" id="LUv-wH-DnZ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iwm-V9-v7e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="510" y="676"/>
+        </scene>
+        <!--LandingPageVC-->
+        <scene sceneID="KkX-hy-n9x">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="LandingPageVC" storyboardName="Auth" referencedIdentifier="LandingPageVC" id="qmw-By-nto" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Dp-cr-f2c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="511" y="620"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AddPostTab" width="45" height="46"/>
+    </resources>
+</document>

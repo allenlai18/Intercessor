@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7V2-k9-wck">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+        <array key="Lato-Semibold.ttf">
+            <string>Lato-Semibold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Friends-->
+        <scene sceneID="ja2-6K-McG">
+            <objects>
+                <viewController storyboardIdentifier="ListAllFriends" id="7V2-k9-wck" customClass="ListAllFriendsVC" customModule="Intercessor" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="e8w-JP-IUz"/>
+                        <viewControllerLayoutGuide type="bottom" id="41H-hd-7z9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xZh-V3-bZA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="0yU-0k-ot2">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="956"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Friends :(" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nuf-Cz-oJU" userLabel="No Friends :(">
+                                <rect key="frame" x="139" y="682" width="98" height="24"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <color key="textColor" red="0.54901960780000003" green="0.53333333329999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="67" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HVi-nK-2q9">
+                                <rect key="frame" x="0.0" y="64" width="375" height="892"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="separatorColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="friend cell" rowHeight="60" id="iPB-wO-hUY" customClass="UserTableViewCell" customModule="Intercessor" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iPB-wO-hUY" id="794-Uc-AEj">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfileImage" translatesAutoresizingMaskIntoConstraints="NO" id="eKv-Ld-pBb">
+                                                    <rect key="frame" x="8" y="10" width="40" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="CuG-5z-Ojl"/>
+                                                        <constraint firstAttribute="width" constant="40" id="Vnu-tY-Oqd"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Display Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDm-zp-lHb">
+                                                    <rect key="frame" x="56" y="8" width="104" height="20"/>
+                                                    <fontDescription key="fontDescription" name="Lato-Semibold" family="Lato" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@handle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebc-G0-ozg">
+                                                    <rect key="frame" x="56" y="31" width="42" height="13"/>
+                                                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="11"/>
+                                                    <color key="textColor" red="0.67450980390000004" green="0.1647058824" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OSB-tb-B8b">
+                                                    <rect key="frame" x="297" y="17" width="70" height="25"/>
+                                                    <state key="normal" image="FriendButton"/>
+                                                    <connections>
+                                                        <action selector="relationshipButtonTapped:" destination="iPB-wO-hUY" eventType="touchUpInside" id="uin-fl-zSd"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="OSB-tb-B8b" firstAttribute="trailing" secondItem="794-Uc-AEj" secondAttribute="trailingMargin" id="4aL-Ts-naR"/>
+                                                <constraint firstItem="OSB-tb-B8b" firstAttribute="centerY" secondItem="794-Uc-AEj" secondAttribute="centerY" id="C7d-OD-Gfq"/>
+                                                <constraint firstAttribute="topMargin" secondItem="dDm-zp-lHb" secondAttribute="top" id="EGP-6E-5Me"/>
+                                                <constraint firstItem="dDm-zp-lHb" firstAttribute="leading" secondItem="eKv-Ld-pBb" secondAttribute="trailing" constant="8" id="bRz-rh-XWa"/>
+                                                <constraint firstAttribute="leadingMargin" secondItem="eKv-Ld-pBb" secondAttribute="leading" id="jej-nT-d3l"/>
+                                                <constraint firstItem="eKv-Ld-pBb" firstAttribute="centerY" secondItem="794-Uc-AEj" secondAttribute="centerY" id="pth-i5-bfs"/>
+                                                <constraint firstItem="ebc-G0-ozg" firstAttribute="leading" secondItem="eKv-Ld-pBb" secondAttribute="trailing" constant="8" id="t1m-NM-suC"/>
+                                                <constraint firstItem="ebc-G0-ozg" firstAttribute="top" secondItem="dDm-zp-lHb" secondAttribute="bottom" constant="3" id="zv6-Fa-fiq"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="displayNameLabel" destination="dDm-zp-lHb" id="gWy-Nd-jBA"/>
+                                            <outlet property="profileImageView" destination="eKv-Ld-pBb" id="yJA-7f-HQ1"/>
+                                            <outlet property="relationshipButton" destination="OSB-tb-B8b" id="ePY-GW-Awg"/>
+                                            <outlet property="userHandleLabel" destination="ebc-G0-ozg" id="7Ot-qp-UfU"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="7V2-k9-wck" id="Q5I-Vz-cyv"/>
+                                    <outlet property="delegate" destination="7V2-k9-wck" id="xvG-nP-FGi"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nuf-Cz-oJU" firstAttribute="centerX" secondItem="xZh-V3-bZA" secondAttribute="centerX" id="0BX-vc-T3h"/>
+                            <constraint firstAttribute="trailing" secondItem="HVi-nK-2q9" secondAttribute="trailing" id="AsR-eR-9hf"/>
+                            <constraint firstItem="41H-hd-7z9" firstAttribute="top" secondItem="HVi-nK-2q9" secondAttribute="bottom" id="I55-3o-Evn"/>
+                            <constraint firstItem="41H-hd-7z9" firstAttribute="top" secondItem="nuf-Cz-oJU" secondAttribute="bottom" constant="250" id="Ii8-LH-0qE"/>
+                            <constraint firstItem="41H-hd-7z9" firstAttribute="top" secondItem="0yU-0k-ot2" secondAttribute="bottom" id="YjG-Lg-WRN"/>
+                            <constraint firstItem="0yU-0k-ot2" firstAttribute="leading" secondItem="xZh-V3-bZA" secondAttribute="leading" id="YlH-fa-5fh"/>
+                            <constraint firstItem="41H-hd-7z9" firstAttribute="top" secondItem="0yU-0k-ot2" secondAttribute="bottom" id="f3f-FC-WxA"/>
+                            <constraint firstItem="HVi-nK-2q9" firstAttribute="leading" secondItem="xZh-V3-bZA" secondAttribute="leading" id="h25-Sg-sqU"/>
+                            <constraint firstItem="0yU-0k-ot2" firstAttribute="top" secondItem="xZh-V3-bZA" secondAttribute="top" id="lBf-6m-3s4"/>
+                            <constraint firstAttribute="trailing" secondItem="0yU-0k-ot2" secondAttribute="trailing" id="nrO-yH-Qay"/>
+                            <constraint firstItem="HVi-nK-2q9" firstAttribute="top" secondItem="e8w-JP-IUz" secondAttribute="bottom" id="yY1-Or-u30"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="f3f-FC-WxA"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Friends" id="10L-fE-8Pd">
+                        <barButtonItem key="leftBarButtonItem" image="BackButton" id="cBq-LY-b6Q">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="leftBarButtonTapped:" destination="7V2-k9-wck" id="Odk-QC-foQ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO">
+                        <color key="barTintColor" red="0.67450980390000004" green="0.1647058824" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </simulatedNavigationBarMetrics>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <fixedSimulatedSizeMetrics key="simulatedDestinationMetrics">
+                        <size key="portraitSize" width="375" height="1000"/>
+                        <size key="landscapeSize" width="375" height="1000"/>
+                    </fixedSimulatedSizeMetrics>
+                    <connections>
+                        <outlet property="allFriendsTableView" destination="HVi-nK-2q9" id="gaN-sF-odG"/>
+                        <outlet property="noFriendsLabel" destination="nuf-Cz-oJU" id="6Xw-NO-aLn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eog-Up-qMy" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1789.5999999999999" y="3386.8065967016496"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BackButton" width="21" height="21"/>
+        <image name="FriendButton" width="70" height="25"/>
+        <image name="bg" width="374" height="667"/>
+        <image name="defaultProfileImage" width="600" height="600"/>
+    </resources>
+</document>
